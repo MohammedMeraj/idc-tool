@@ -71,10 +71,14 @@ const HeroSection = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-up stagger-2">
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 group">
+          <a 
+            href="/idc_tool.exe" 
+            download="IDC_Tool.exe"
+            className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 group"
+          >
             <Download className="w-5 h-5 group-hover:animate-bounce" />
             <span>Download for Windows</span>
-          </button>
+          </a>
           <button className="px-8 py-4 glass-strong text-slate-700 rounded-2xl font-semibold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 group">
             <Play className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
             <span>Watch Demo</span>
@@ -243,13 +247,6 @@ const PreviewSection = () => {
 
 // Download Section
 const DownloadSection = () => {
-  const [downloadStarted, setDownloadStarted] = useState(false);
-
-  const handleDownload = () => {
-    setDownloadStarted(true);
-    setTimeout(() => setDownloadStarted(false), 3000);
-  };
-
   return (
     <section id="download" className="py-24 px-6">
       <div className="max-w-4xl mx-auto text-center">
@@ -280,22 +277,20 @@ const DownloadSection = () => {
                 </div>
                 <div className="flex items-center space-x-2 text-slate-600">
                   <Download className="w-4 h-4" />
-                  <span>15.2 MB Download</span>
+                  <span>86.8 MB Download</span>
                 </div>
               </div>
             </div>
             
             <div className="flex flex-col space-y-4">
-              <button 
-                onClick={handleDownload}
-                className={`px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center space-x-2 ${
-                  downloadStarted ? 'opacity-75 cursor-not-allowed' : ''
-                }`}
-                disabled={downloadStarted}
+              <a 
+                href="/idc_tool.exe"
+                download="IDC_Tool.exe"
+                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
               >
-                <Download className={`w-5 h-5 ${downloadStarted ? 'animate-bounce' : ''}`} />
-                <span>{downloadStarted ? 'Downloading...' : 'Download Now'}</span>
-              </button>
+                <Download className="w-5 h-5" />
+                <span>Download Now</span>
+              </a>
               
               <a 
                 href="https://github.com" 

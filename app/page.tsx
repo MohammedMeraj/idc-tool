@@ -25,7 +25,7 @@ const Navigation = () => {
     <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 px-6 py-3 glass rounded-2xl shadow-lg animate-fade-in-down">
       <div className="flex items-center space-x-8">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center animate-float">
+          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
             <Camera className="w-5 h-5 text-white" />
           </div>
           <span className="font-bold text-slate-700">IDC Tool</span>
@@ -34,7 +34,7 @@ const Navigation = () => {
         <a href="#preview" className="text-slate-600 hover:text-blue-600 transition-colors duration-300">Preview</a>
         <a href="#download" className="text-slate-600 hover:text-blue-600 transition-colors duration-300">Download</a>
         <a 
-          href="https://github.com" 
+          href="https://github.com/MohammedMeraj/idc-tool" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center space-x-1 text-slate-600 hover:text-blue-600 transition-colors duration-300"
@@ -58,7 +58,7 @@ const HeroSection = () => {
       
       <div className="max-w-6xl mx-auto text-center relative z-10">
         <div className="mb-8">
-          <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-3xl mx-auto mb-6 flex items-center justify-center shadow-2xl animate-scale-in animate-float">
+          <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-3xl mx-auto mb-6 flex items-center justify-center shadow-2xl animate-scale-in">
             <Camera className="w-12 h-12 text-white" />
           </div>
           <h1 className="text-6xl md:text-7xl font-bold text-slate-800 mb-6 animate-fade-in-up">
@@ -293,7 +293,7 @@ const DownloadSection = () => {
               </a>
               
               <a 
-                href="https://github.com" 
+                href="https://github.com/MohammedMeraj/idc-tool" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-6 py-3 glass text-slate-700 rounded-xl font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
@@ -334,7 +334,7 @@ export default function Home() {
             Interactive Data Capture Tool - Making dataset creation fast and efficient.
           </p>
           <div className="flex justify-center space-x-6">
-            <a href="https://github.com" className="text-slate-600 hover:text-blue-600 transition-colors">GitHub</a>
+            <a href="https://github.com/MohammedMeraj/idc-tool" className="text-slate-600 hover:text-blue-600 transition-colors">GitHub</a>
             <a href="#" className="text-slate-600 hover:text-blue-600 transition-colors">Documentation</a>
             <a href="#" className="text-slate-600 hover:text-blue-600 transition-colors">Support</a>
           </div>
